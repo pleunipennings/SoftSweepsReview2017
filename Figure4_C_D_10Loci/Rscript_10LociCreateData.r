@@ -1,4 +1,5 @@
 #This script will run simulations (using a separate C++ script) to create figure 4 C and D for the Soft Sweeps Review
+#Another R script creates the figures. 
 
 ####################
 #Preparations
@@ -37,7 +38,7 @@ for (sd in sdlist[1]){
         write(x,file="./tempscript.sh")
         system("chmod 775 ./tempscript.sh")
         #Run tempscript.sh
-        system("./tempscript.sh")
+        #system("./tempscript.sh") This takes time!
     }
 }
         

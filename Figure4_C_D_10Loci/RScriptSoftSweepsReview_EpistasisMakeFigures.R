@@ -1,11 +1,8 @@
-#This script will run simulations (using a separate C++ script) to create a figure for the Soft Sweeps Review
+#This script will run simulations (using a separate C++ script) to create figure 4C and 4D for the Soft Sweeps Review
 
 ####################
 #Preparations
-setwd("~/Dropbox/SoftSweepsReview/Code/Epi_10Loci_Dec_2016/")
 listMutRates<-10^(seq(-7,-4.,by=.5))/2
-
-#system("./make_HIV1site_Epistasis")    #compile the code
 
 options("scipen" = 999)
 sdlist<-c(0.001, 0.1)
@@ -20,7 +17,7 @@ for (sd in sdlist){
     for (i in 1:length(listMutRates)){
         mu = listMutRates[i]
         print(paste("mu",mu, "epistasis", epistasis))
-        filename <- paste("Epi_Files/","Epi_","u", mu, "_" , "sd_", sd, "_", "10loc" ,".txt",sep="")
+        filename <- paste("Figure4_C_D_10Loci/Epi_Files/","Epi_","u", mu, "_" , "sd_", sd, "_", "10loc" ,".txt",sep="")
         print(filename)
         if(file.exists(filename)){
             x<-read.csv(filename,sep="\t",header = FALSE)
@@ -48,7 +45,7 @@ for (sd in sdlist){
     #dev.off()
       
     filename = paste ("NewTenloci0_",substring(toString(sd),3),".pdf",sep="")
-    pdf(filename,width=10,height=8)
+    #pdf(filename,width=10,height=8) #uncomment if you want to make the figure as a pdf
     t="C. Strong trade-off, multi-locus target"
     if (sd==0.001) t= "D. Weak trade-off, multi-locus target"
     par(mar = c(4,4,10,1))
@@ -67,7 +64,7 @@ for (sd in sdlist){
     mtext("Number of simulation runs", side=2,cex=1.5,line=2)
     axis(2,rep("",6),at=seq(0,1000,by=200),line=-1.)
     mtext(seq(0,1000,by=200),side=2,at=seq(0,1000,by=200),line=-0.5,las=1,cex=1.3)
-    dev.off()
+    #dev.off() #uncomment if you want to make the figure as a pdf
 
 }
 

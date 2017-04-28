@@ -1,0 +1,1 @@
+g++ -o /Users/pleuni/Dropbox/SoftSweepsReview/Code/One_Locus/CodeSoftSweepsReview_1locus /Users/pleuni/Dropbox/SoftSweepsReview/Code/One_Locus/CodeSoftSweepsReview_1locus.cp -I/usr/local/include/ -L /usr/local/lib/ -lgsl -lgslcblas

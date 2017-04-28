@@ -1,0 +1,1 @@
+g++ -o /Users/pleuni/Dropbox/SoftSweepsReview/Code/Det_vs_Stoch/CodeSoftSweepsReview_1locusDet /Users/pleuni/Dropbox/SoftSweepsReview/Code/Det_vs_Stoch/CodeSoftSweepsReview_1locusDet.cp -I/usr/local/include/ -L /usr/local/lib/ -lgsl -lgslcblas

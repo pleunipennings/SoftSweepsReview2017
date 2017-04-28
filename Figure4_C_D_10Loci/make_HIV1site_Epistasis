@@ -1,0 +1,1 @@
+g++ -o /Users/pleuni/Dropbox/SoftSweepsReview/Code/Epi_10Loci_Dec_2016/CodeSoftSweepsReview_Epistasis /Users/pleuni/Dropbox/SoftSweepsReview/Code/Epi_10Loci_Dec_2016/CodeSoftSweepsReview_Epistasis.cp -I/usr/local/include/ -L /usr/local/lib/ -lgsl -lgslcblas

@@ -1,0 +1,1 @@
+N	10000	Theta_trait	1	Theta_locus	1	Hard	0	HardSGV	345	Sos	534	Mos	2733	NoSweep	1152

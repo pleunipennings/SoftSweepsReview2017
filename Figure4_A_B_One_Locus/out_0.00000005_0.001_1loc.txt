@@ -1,0 +1,1 @@
+N	10000	Theta_trait	0.001	Theta_locus	0.001	Hard	988	HardSGV	1	Sos	3	Mos	8
